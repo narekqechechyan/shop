@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/store.css">
+
+    <title>NQ SHOP | Խանութ</title>
+</head>
+<body> 
+    <!----------------------------------------- Header ----------------------------------------->
+    <div class="container-fluid">
+      <div class="row bg-dark">
+        <div class="col-md-4 col-xl-6 d-none d-md-block pt-2 text-black">    
+          <a href="tel:060494449" class="text-justify">060 49-44-49</a>
+      </div>
+      <div class=" col-6 col-md-2">
+          <select class="custom-select my-1" id="inlineFormCustomSelectPref">
+            <option selected>AM</option>
+            <option value="1">Rus</option>
+            <option value="2">Eng</option>
+        </select>
+    </div>
+    <div class="col-6 col-md-2">
+       <select class="custom-select my-1 " id="inlineFormCustomSelectPref">
+          <option selected>֏</option>
+          <option value="1">$</option>
+          <option value="2">€</option>
+      </select>
+  </div>
+  <div class=" col-md-4 col-lg-2 d-none d-md-block pt-1">
+    <button type="button" class="btn btn-warning font-weight-bold">Նախընտրելի <span class="badge badge-dark text-light">3</span>
+     </button>
+ </div>
+</div>
+
+<div class="row">
+  <nav class="navbar bg-warning col-12">
+    <div class="col-6 col-md-2"> 
+      <a href="index.html"><img src="image/logo.png" width="160" height="80"></a>
+  </div>
+
+  <div class="col-sm-6 col-md-6 col-lg-8  d-none d-md-block pr-2">
+      <form class="form-inline d-none d-md-flex w-100 row">
+        <input class="form-control mr-sm-2 w-100 col-10" type="search" placeholder="Մուտքագրեք փնտրելու համար" aria-label="Search">
+        <button class="btn btn-outline-light btn-secondary col-auto" type="submit">Որոնել</button>
+    </form>
+</div>
+
+<div class="col-auto row flex-row">
+  <div class="dropdown float-right">
+    <button class="btn btn-secondary dropdown-toggle mr-5" type="button" id="dropdownMenu2" data-toggle="dropdown">
+      Իմ հաշիվը
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+      <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#loginmodal">Մուտք</button>
+      <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#registermodal">Գրանցում</button>
+      <button class="dropdown-item" type="button">Կարգավորումներ</button>
+  </div>
+</div>
+</div>
+</nav>
+</div>
+
+<div class="container">
+    <nav aria-label="breadcrumb" class="row">
+        <ol class="breadcrumb mt-3 col mr-auto">
+            <li class="breadcrumb-item"><a href="index.html">Գլխավոր</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Խանութ</li>
+        </ol>
+
+        <form action="" class="form-inline col-12 col-md-auto">
+            <label for="sortBy" class="mr-2">Դասակարգել ըստ։</label>
+            <select class="custom-select" id="sortBy">
+                <option value="1">գնի աճման</option>
+                <option value="2">գնի նվազման</option>
+                <option value="3">վարկանիշ</option>
+            </select>
+        </form>
+    </nav>  
+</div>
+
+<div class="container">
+    <div class="row border-top">
+        <div class="d-none d-md-block col-md-3 sidebar bg-light border-right border-left border-bottom">
+            <form>
+                <p>
+                    <a class="text-primary" data-toggle="collapse" href="#selectBrand" role="button" aria-expanded="false" aria-controls="selectBrand">
+                        Ապրանքանիշը
+                    </a>
+                </p>
+                <div class="collapse bg-secondary p-2" id="selectBrand">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="hikvision">
+                        <label class="custom-control-label" for="hikvision">Hikvision</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="anbiux">
+                        <label class="custom-control-label" for="anbiux">Anbiux</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="samsung">
+                        <label class="custom-control-label" for="samsung">Samsung</label>
+                    </div>
+                </div>
+                <p>
+                    <a class="text-primary" data-toggle="collapse" href="#selectType" role="button" aria-expanded="false" aria-controls="selectType">
+                        Անալոգային / Ցանցային
+                    </a>
+
+                </p>
+                <div class="collapse bg-secondary p-2" id="selectType">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="IP">
+                        <label class="custom-control-label" for="IP">IP</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="AHD">
+                        <label class="custom-control-label" for="AHD">AHD</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="XVI">
+                        <label class="custom-control-label" for="XVI">XVI</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="TVI">
+                        <label class="custom-control-label" for="TVI">TVI</label>
+                    </div>
+                </div>
+
+                <p>
+                    <a class="text-primary" data-toggle="collapse" href="#megapixel" role="button" aria-expanded="false" aria-controls="megapixel">
+                        Մեգապիքսել
+                    </a>
+
+                </p>
+                <div class="collapse bg-secondary p-2" id="megapixel">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="1 MP">
+                        <label class="custom-control-label" for="1 MP">1 MP</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="2 MP">
+                        <label class="custom-control-label" for="2 MP">2 MP</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="5 MP">
+                        <label class="custom-control-label" for="5 MP">5 MP</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="8 MP">
+                        <label class="custom-control-label" for="8 MP">8 MP</label>
+                    </div>
+                </div>
+
+                <p>
+                    <a class="text-primary" data-toggle="collapse" href="#VideoRecorder" role="button" aria-expanded="false" aria-controls="VideoRecorder">
+                        Տեսաձայնագրիչ
+                    </a>
+
+                </p>
+                <div class="collapse bg-secondary p-2" id="VideoRecorder">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="DVR">
+                        <label class="custom-control-label" for="DVR">DVR</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="NVR">
+                        <label class="custom-control-label" for="NVR">NVR</label>
+                    </div>
+                </div>
+
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="collection">
+                    <label class="custom-control-label" for="collection">Հավաքածու</label>
+                </div>
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="FreeShipping">
+                    <label class="custom-control-label" for="FreeShipping">Անվճար առաքում</label>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-12 col-md-9 main border-right border-left">
+            <div class="row justify-content-center">
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <img class="w-100" src="image/001.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6><a href="product.html" class="text-decoration-none">DS-2CC12D9T-AIT3ZE</a>
+                            </h6>
+                            <ul class="d-none d-lg-block">
+                                <li>2 MP</li>
+                                <li>Ուլտրա ցածր լուսավորությամբ</li>
+                                <li>Գնդաձև խցիկ</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">12000 ֏</div>
+                            <button class="btn btn-primary w-100 h-100">Ավելացնել զամբյուղում</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <img class="w-100" src="image/002.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6><a href="product.html" class="text-decoration-none">DS-2CE16D5T-IR</a>
+                            </h6>
+                            <ul class="d-none d-lg-block">
+                                <li>1080P HD</li>
+                                <li>Գնդաձև խցիկ</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">7500 ֏</div>
+                            <button class="btn btn-primary w-100 h-100">Ավելացնել զամբյուղում</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <img class="w-100" src="image/003.png" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6><a href="product.html" class="text-decoration-none">DS-2CC12D9T-AIT3ZE</a>
+                            </h6>
+                            <ul class="d-none d-lg-block">
+                                <li>4K</li>
+                                <li>Ուլտրա ցածր լուսավորությամբ</li>
+                                <li>Թեթև</li>
+                                <li>Գնդաձև խցիկ</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">81000 ֏</div>
+                            <button class="btn btn-primary w-100 h-100">Ավելացնել զամբյուղում</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <img class="w-100" src="image/004.png" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6><a href="product.html" class="text-decoration-none">DS-2CE37U8T-A</a>
+                            </h6>
+                            <ul class="d-none d-lg-block">
+                                <li>4K</li>
+                                <li>Ծայրահեղ ցածր լույսի տուփ</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">81500 ֏</div>
+                            <button class="btn btn-primary w-100 h-100">Ավելացնել զամբյուղում</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <img class="w-100" src="image/005.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6><a href="product.html" class="text-decoration-none">DS-2CC12A1P(N)-AVFIR3</a>
+                            </h6>
+                            <ul class="d-none d-lg-block">
+                                <li>700TVL</li>
+                                <li>Բազմաբնույթ կիզակետային IR փամփուշտ</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">9700 ֏</div>
+                            <button class="btn btn-primary w-100 h-100">Ավելացնել զամբյուղում</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <img class="w-100" src="image/007.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6><a href="product.html" class="text-decoration-none">DS-KIS203</a>
+                            </h6>
+                            <ul class="d-none d-lg-block">
+                                <li>5MP զանգի տեսախզիկը</li>
+                                <li>Մոնիտոր 25x15 սմ</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">71000 ֏</div>
+                            <button class="btn btn-primary w-100 h-100">Ավելացնել զամբյուղում</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <img class="w-100" src="image/008.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6><a href="product.html" class="text-decoration-none">Մուտքի մատնահետքի սկաներ #0125254</a>
+                            </h6>
+                            <ul class="d-none d-lg-block">
+                                <li>Սկաներ</li>
+                                <li>Կանաչ լազեր</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">15000 ֏</div>
+                            <button class="btn btn-primary w-100 h-100">Ավելացնել զամբյուղում</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <img class="w-100" src="image/009.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6><a href="product.html" class="text-decoration-none">Քարտի ընթերցիչ #0871852</a>
+                            </h6>
+                            <ul class="d-none d-lg-block">
+                                <li>IC քարտերի համար</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">8700 ֏</div>
+                            <button class="btn btn-primary w-100 h-100">Ավելացնել զամբյուղում</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <img class="w-100" src="image/0010.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6><a href="product.html" class="text-decoration-none">Էնդոսկոպ տեսախցիկ #047882</a>
+                            </h6>
+                            <ul class="d-none d-lg-block">
+                                <li>2 MP</li>
+                                <li>5 մետր լարով</li>
+                                <li>USB</li>
+                                <li>LED լույսով</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">5500 ֏</div>
+                            <button class="btn btn-primary w-100 h-100">Ավելացնել զամբյուղում</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-12 product-card border p-2">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4 col-lg-3">
+                            <img class="w-100" src="image/0010.jpg" alt="">
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <h6><a href="product.html" class="text-decoration-none">Էնդոսկոպ տեսախցիկ #047882</a>
+                            </h6>
+                            <ul class="d-none d-lg-block">
+                                <li>2 MP</li>
+                                <li>5 մետր լարով</li>
+                                <li>USB</li>
+                                <li>LED լույսով</li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center h-100">
+                            <div class="display-4">5500 ֏</div>
+                            <button class="btn btn-primary w-100 h-100">Ավելացնել զամբյուղում</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <nav class="col-12 mt-2">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="store.html">Նախորդը</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="store.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="store.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="store.html">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="store.html">Հաջորդը</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<!---------------------------------------------- Footer ----------------------------------------------->
+<div class="container-fluid bg-dark">
+  <div class="row text-center b25 text-light text-uppercase">
+    <div class="col-12 col-md">
+      <a href="" class="nav-link  text-light h5">Կապ</a> 
+  </div>
+  <div class="col-12 col-md ">
+      <a href="" class="nav-link text-light h5">Գնումներ</a>
+  </div>
+  <div class="col-12 col-md ">
+      <a href="" class="nav-link text-light h5">Վճարումների կարգը</a> 
+  </div>
+</div>
+
+<div class="row text-light bg-dark">
+    <div class="col-12 pt-3 pb-1 text-decoration-none">
+
+      <!-- Facebook logo -->
+      <a href="https://www.facebook.com/tumocenter/" target="_blank"> 
+        <img  class="mr-2 ml-2 text-decoration-none" src="image/facebook.png" width="40" height="40">
+    </a>
+
+    <!-- Instagram logo -->
+    <a href="https://www.instagram.com/tumocenter/" target="_blank">
+     <img src="image/instagram.png" width="40" height="40">
+ </a>
+
+ <!-- YouTube logo -->
+ <a href="https://www.youtube.com/user/tumotube" target="_blank">
+  <img src="image/youtube.png" width="105" height="40">
+</a>
+
+<div class="col-12 text-right pt-1 pb-3">
+   &copy; Narek Qechechyan 
+</div> 
+<div class="col-12 text-center">
+    <p>Բոլոր իրավունքները պաշտպանված են</p> 
+</div>
+</div>
+</div>
+
+<!-------------------------------------- Modal Մուտք --------------------------------------------------->
+
+<div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Մուտք</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+      </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Էլեկտրոնային հասցե</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Գացտնաբառ</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group form-check">
+    </div>
+    <button type="submit" class="btn btn-primary">Մուտք</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<!------------------------------------- Modal Գրանցում --------------------------------------------------->
+<div class="modal fade" id="registermodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Գրանցում</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+      </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Էլեկտրոնային հասցե</label>
+          <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="form-group col-md-6">
+          <label for="inputPassword4">Գացտնաբառ</label>
+          <input type="password" class="form-control" id="inputPassword4">
+      </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Հասցե</label>
+    <input type="text" class="form-control" id="inputAddress">
+</div>
+<div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Տուն/Բնակարան</label>
+      <input type="text" class="form-control" id="inputCity">
+  </div>
+  <div class="form-group col-md-4">
+      <label for="inputState">Մարզ</label>
+      <select id="inputState" class="form-control">
+        <option selected></option>
+        <option>Երևան</option>
+        <option>Արագածոտն</option>
+        <option>Արարատ</option>
+        <option>Արմավիր</option>
+        <option>Գեղարքունիք</option>
+        <option>Կոտայք</option>
+        <option>Լոռի</option>
+        <option>Շիրակ</option>
+        <option>Սյունիք</option>
+        <option>Տավուշ</option>
+        <option>Վայոց ձոր</option>
+    </select>
+</div>
+<div class="form-group col-md-2">
+  <label for="inputZip">Zip</label>
+  <input type="text" class="form-control" id="inputZip">
+</div>
+</div>
+<div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Տեղեկատվությունը ստույգ է
+    </label>
+</div>
+</div>
+<button type="submit" class="btn btn-primary">Գրանցվել</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Icon script -->
+<script src="https://kit.fontawesome.com/818c4cab2e.js" crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
