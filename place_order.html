@@ -82,9 +82,10 @@
     <div class="col-lg-12 bg-light my-2 py-2">  
       <h2 class="font-weight-light text-center">Վճարում բանկային քարտով</h2><hr>
       <div class="media-body text-center col-lg-8 col-12 mx-auto">
+        <img src="image/arca.png" width="80">
+        <img src="image/visa.png" width="80">
         <table class="table table-bordered">
           <tbody>
-            <form></form>
             <tr>
               <th>Քարտի հաշվեհամարը</th>
               <td><input class="w-100" type="text" name="CardNumber" maxlength="19"></td>
@@ -97,53 +98,59 @@
             <th>Պիտանելիության ժամկետ</th>
             <td><input type="text" name="date" placeholder="08/24" maxlength="5"></td>
           </tr>
+          <tr>
+            <th>CVV</th>
+            <td><input type="password" name="date" placeholder="123" maxlength="3"></td>
+          </tr>
         </tbody>
       </table>
-    </div><br>
-
-    <div class="container"> 
-      <h2 class="font-weight-light text-center my-5">Առաքում</h2>
-      <form>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="validationDefault01">Անուն</label>
-            <input type="text" class="form-control" id="validationDefault01" required>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="validationDefault02">Ազգանուն</label>
-            <input type="text" class="form-control" id="validationDefault02" required>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="validationDefault03">Հասցե</label>
-            <input type="text" class="form-control" id="validationDefault03" required>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationDefault04">Մարզ</label>
-            <select class="custom-select" id="validationDefault04" required>
-              <option selected disabled value="">Երևան</option>
-                <option>Արագածոտն</option>
-                <option>Արարատ</option>
-                <option>Արմավիր</option>
-                <option>Գեղարքունիք</option>
-                <option>Կոտայք</option>
-                <option>Լոռի</option>
-                <option>Շիրակ</option>
-                <option>Սյունիք</option>
-                <option>Տավուշ</option>
-                <option>Վայոց ձոր</option>
-            </select>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="validationDefault05">Առաքման օրը</label>
-            <input type="date" class="form-control" id="validationDefault05" required>
-          </div>
-        </div>
-        <a href="final_order.html" class="btn btn-danger w-100 mt-3">Հաստատել պատվերը</a>
-      </form>
     </div>
+  </div><br>
+
+  <div class="container"> 
+    <h2 class="font-weight-light text-center my-5">Առաքում</h2>
+    <form>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationDefault01">Անուն</label>
+          <input type="text" class="form-control" id="validationDefault01" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validationDefault02">Ազգանուն</label>
+          <input type="text" class="form-control" id="validationDefault02" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationDefault03">Հասցե</label>
+          <input type="text" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationDefault04">Մարզ</label>
+          <select class="custom-select" id="validationDefault04" required>
+            <option selected disabled value="">*</option>
+            <option>Երևան</option>
+            <option>Արագածոտն</option>
+            <option>Արարատ</option>
+            <option>Արմավիր</option>
+            <option>Գեղարքունիք</option>
+            <option>Կոտայք</option>
+            <option>Լոռի</option>
+            <option>Շիրակ</option>
+            <option>Սյունիք</option>
+            <option>Տավուշ</option>
+            <option>Վայոց ձոր</option>
+          </select>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="validationDefault05">Առաքման օրը</label>
+          <input type="date" class="form-control" id="validationDefault05" required>
+        </div>
+      </div>
+      <a href="final_order.html" class="btn btn-danger w-100 mt-3">Հաստատել պատվերը</a>
+    </form>
   </div>
+</div>
 </div>
 </div><br>
 
