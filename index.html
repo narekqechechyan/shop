@@ -11,32 +11,33 @@
   <title>NQ SHOP | Գլխավոր</title>
 </head>
 <body>
- <div class="container-fluid">
-  <div class="row bg-light">
-    <div class="col-md-4 col-xl-6 d-none d-md-block pt-2 text-black">    
-      <a href="tel:060494449" class="text-justify">060 49-44-49</a>
-    </div>
-    <div class=" col-6 col-md-2">
-      <select class="custom-select my-1" id="inlineFormCustomSelectPref">
-        <option selected>AM</option>
-        <option value="1">Rus</option>
-        <option value="2">Eng</option>
+  <!----------------------------------------- Header ----------------------------------------->
+  <div class="container-fluid">
+    <div class="row bg-light">
+      <div class="col-md-4 col-xl-6 d-none d-md-block pt-2 text-black">    
+        <a href="tel:060494449" class="text-justify">060 49-44-49</a>
+      </div>
+      <div class=" col-6 col-md-2">
+        <select class="custom-select my-1" id="inlineFormCustomSelectPref">
+          <option selected>AM</option>
+          <option value="1">Rus</option>
+          <option value="2">Eng</option>
+        </select>
+      </div>
+      <div class="col-6 col-md-2">
+       <select class="custom-select my-1 " id="inlineFormCustomSelectPref">
+        <option selected>֏</option>
+        <option value="1">$</option>
+        <option value="2">€</option>
       </select>
     </div>
-    <div class="col-6 col-md-2">
-     <select class="custom-select my-1 " id="inlineFormCustomSelectPref">
-      <option selected>֏</option>
-      <option value="1">$</option>
-      <option value="2">€</option>
-    </select>
-  </div>
-  <div class=" col-md-4 col-lg-2 d-none d-md-block pt-1">
-   <button type="button" class="btn btn-warning font-weight-bold">Նախընտրելի <span class="badge badge-dark text-light">3</span>
-   </button>
+    <div class=" col-md-4 col-lg-2 d-none d-md-block pt-1">
+      <a href="wishlist.html" class="btn btn-warning font-weight-bold">Նախընտրելի <span class="badge badge-dark text-light">4</span></a>
+     </button>
+   </div>
  </div>
-</div>
 
-<div class="row">
+ <div class="row">
   <nav class="navbar bg-warning col-12">
     <div class="col-6 col-md-2"> 
       <a href="index.html"><img src="image/logo.png" width="160" height="80"></a>
@@ -57,7 +58,8 @@
         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
           <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#loginmodal">Մուտք</button>
           <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#registermodal">Գրանցում</button>
-          <button class="dropdown-item" type="button">Կարգավորումներ</button>
+          <button class="dropdown-item" type="button" onclick="window.location.href='my_orders.html';">Իմ պատվերները</button>
+          <button class="dropdown-item" type="button" onclick="window.location.href='account.html';">Կարգավորումներ</button>
         </div>
       </div>
     </div>
@@ -364,7 +366,7 @@
     <div class="col-12 col-md">
       <a href="" class="nav-link  text-light h5">Կապ</a> 
     </div>
-    <div class="col-12 col-md ">
+    <div class="col-12 col-md">
       <a href="store.html" class="nav-link text-light h5">Գնումներ</a>
     </div>
     <div class="col-12 col-md ">
@@ -377,7 +379,7 @@
 
       <!-- Facebook logo -->
       <a href="https://www.facebook.com/tumocenter/" target="_blank"> 
-        <img  class="mr-2 ml-2 text-decoration-none" src="image/facebook.png" width="40" height="40">
+        <img  class="mr-2 ml-2" src="image/facebook.png" width="40" height="40">
       </a>
 
       <!-- Instagram logo -->

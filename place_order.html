@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <title>NQ SHOP | Պատվերի ձևակերպում</title>
+</head>
+<body>
+  <!----------------------------------------- Header ----------------------------------------->
+  <div class="container-fluid">
+    <div class="row bg-light">
+      <div class="col-md-4 col-xl-6 d-none d-md-block pt-2 text-black">    
+        <a href="tel:060494449" class="text-justify">060 49-44-49</a>
+      </div>
+      <div class=" col-6 col-md-2">
+        <select class="custom-select my-1" id="inlineFormCustomSelectPref">
+          <option selected>AM</option>
+          <option value="1">Rus</option>
+          <option value="2">Eng</option>
+        </select>
+      </div>
+      <div class="col-6 col-md-2">
+       <select class="custom-select my-1 " id="inlineFormCustomSelectPref">
+        <option selected>֏</option>
+        <option value="1">$</option>
+        <option value="2">€</option>
+      </select>
+    </div>
+    <div class=" col-md-4 col-lg-2 d-none d-md-block pt-1">
+      <a href="wishlist.html" class="btn btn-warning font-weight-bold">Նախընտրելի <span class="badge badge-dark text-light">4</span></a>
+    </button>
+  </div>
+</div>
+
+<div class="row">
+  <nav class="navbar bg-warning col-12">
+    <div class="col-6 col-md-2"> 
+      <a href="index.html"><img src="image/logo.png" width="160" height="80"></a>
+    </div>
+
+    <div class="col-sm-6 col-md-6 col-lg-8  d-none d-md-block pr-2">
+      <form class="form-inline d-none d-md-flex w-100 row">
+        <input class="form-control mr-sm-2 w-100 col-10" type="search" placeholder="Մուտքագրեք փնտրելու համար" aria-label="Search">
+        <button class="btn btn-outline-light btn-secondary col-auto" type="submit">Որոնել</button>
+      </form>
+    </div>
+
+    <div class="col-auto row flex-row">
+      <div class="dropdown float-right">
+        <button class="btn btn-secondary dropdown-toggle mr-5" type="button" id="dropdownMenu2" data-toggle="dropdown">
+          Իմ հաշիվը
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#loginmodal">Մուտք</button>
+          <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#registermodal">Գրանցում</button>
+          <button class="dropdown-item" type="button" onclick="window.location.href='my_orders.html';">Իմ պատվերները</button>
+          <button class="dropdown-item" type="button" onclick="window.location.href='account.html';">Կարգավորումներ</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<div class="container">
+  <nav aria-label="breadcrumb" class="row">
+    <ol class="breadcrumb mt-3 col mr-auto">
+      <li class="breadcrumb-item"><a href="index.html">Գլխավոր</a></li>
+      <li class="breadcrumb-item"><a href="store.html">Խանութ</a></li>
+      <li class="breadcrumb-item"><a href="card.html">Զամբյուղ</a></li>
+      <li class="breadcrumb-item active">Պատվերի ձևակերպում</li>
+    </ol>
+  </nav>
+  <h2 class="p-3 font-weight-bold alert-dark d-flex justify-content-center w-100">Պատվերի ձևակերպում</h2>
+  <div class="container-lg px-0 m-auto">
+
+    <div class="col-lg-12 bg-light my-2 py-2">  
+      <h2 class="font-weight-light text-center">Վճարում բանկային քարտով</h2><hr>
+      <div class="media-body text-center col-lg-8 col-12 mx-auto">
+        <table class="table table-bordered">
+          <tbody>
+            <form></form>
+            <tr>
+              <th>Քարտի հաշվեհամարը</th>
+              <td><input class="w-100" type="text" name="CardNumber" maxlength="19"></td>
+            </tr>
+            <tr>
+             <th>Անուն Ազգանուն</th>
+             <td><input class="w-100" type="text" name="name" ></td>
+           </tr>
+           <tr>
+            <th>Պիտանելիության ժամկետ</th>
+            <td><input type="text" name="date" placeholder="08/24" maxlength="5"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div><br>
+
+    <div class="container"> 
+      <h2 class="font-weight-light text-center my-5">Առաքում</h2>
+      <form>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault01">Անուն</label>
+            <input type="text" class="form-control" id="validationDefault01" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault02">Ազգանուն</label>
+            <input type="text" class="form-control" id="validationDefault02" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault03">Հասցե</label>
+            <input type="text" class="form-control" id="validationDefault03" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault04">Մարզ</label>
+            <select class="custom-select" id="validationDefault04" required>
+              <option selected disabled value="">Երևան</option>
+                <option>Արագածոտն</option>
+                <option>Արարատ</option>
+                <option>Արմավիր</option>
+                <option>Գեղարքունիք</option>
+                <option>Կոտայք</option>
+                <option>Լոռի</option>
+                <option>Շիրակ</option>
+                <option>Սյունիք</option>
+                <option>Տավուշ</option>
+                <option>Վայոց ձոր</option>
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault05">Առաքման օրը</label>
+            <input type="date" class="form-control" id="validationDefault05" required>
+          </div>
+        </div>
+        <a href="final_order.html" class="btn btn-danger w-100 mt-3">Հաստատել պատվերը</a>
+      </form>
+    </div>
+  </div>
+</div>
+</div><br>
+
+<!---------------------------------------------- Footer ----------------------------------------------->
+<div class="container-fluid bg-dark">
+  <div class="row text-center b25 text-light text-uppercase">
+    <div class="col-12 col-md">
+      <a href="" class="nav-link  text-light h5">Կապ</a> 
+    </div>
+    <div class="col-12 col-md">
+      <a href="store.html" class="nav-link text-light h5">Գնումներ</a>
+    </div>
+    <div class="col-12 col-md ">
+      <a href="" class="nav-link text-light h5">Վճարումների կարգը</a> 
+    </div>
+  </div>
+
+  <div class="row text-light bg-dark">
+    <div class="col-12 pt-3 pb-1">
+
+      <!-- Facebook logo -->
+      <a href="https://www.facebook.com/tumocenter/" target="_blank"> 
+        <img  class="mr-2 ml-2" src="image/facebook.png" width="40" height="40">
+      </a>
+
+      <!-- Instagram logo -->
+      <a href="https://www.instagram.com/tumocenter/" target="_blank">
+       <img src="image/instagram.png" width="40" height="40">
+     </a>
+
+     <!-- YouTube logo -->
+     <a href="https://www.youtube.com/user/tumotube" target="_blank">
+      <img src="image/youtube.png" width="105" height="40">
+    </a>
+
+    <div class="col-12 text-right pt-1 pb-3">
+     &copy; Narek Qechechyan 
+   </div> 
+   <div class="col-12 text-center">
+    <p>Բոլոր իրավունքները պաշտպանված են</p> 
+  </div>
+</div>
+</div>
+
+
+
+<!-------------------------------------- Modal Մուտք --------------------------------------------------->
+
+<div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Մուտք</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Էլեկտրոնային հասցե</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Գացտնաբառ</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+          </div>
+          <button type="submit" class="btn btn-primary">Մուտք</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------- Modal Գրանցում --------------------------------------------------->
+<div class="modal fade" id="registermodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Գրանցում</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Էլեկտրոնային հասցե</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Գացտնաբառ</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Հասցե</label>
+            <input type="text" class="form-control" id="inputAddress">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">Տուն/Բնակարան</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">Մարզ</label>
+              <select id="inputState" class="form-control">
+                <option selected></option>
+                <option>Երևան</option>
+                <option>Արագածոտն</option>
+                <option>Արարատ</option>
+                <option>Արմավիր</option>
+                <option>Գեղարքունիք</option>
+                <option>Կոտայք</option>
+                <option>Լոռի</option>
+                <option>Շիրակ</option>
+                <option>Սյունիք</option>
+                <option>Տավուշ</option>
+                <option>Վայոց ձոր</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Տեղեկատվությունը ստույգ է
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Գրանցվել</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

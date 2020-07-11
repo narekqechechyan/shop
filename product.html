@@ -33,8 +33,7 @@
       </select>
     </div>
     <div class=" col-md-4 col-lg-2 d-none d-md-block pt-1">
-     <button type="button" class="btn btn-warning font-weight-bold">Նախընտրելի <span class="badge badge-dark text-light">3</span>
-     </button>
+      <a href="wishlist.html" class="btn btn-warning font-weight-bold">Նախընտրելի <span class="badge badge-dark text-light">4</span></a>
    </div>
  </div>
 
@@ -59,7 +58,8 @@
         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
           <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#loginmodal">Մուտք</button>
           <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#registermodal">Գրանցում</button>
-          <button class="dropdown-item" type="button">Կարգավորումներ</button>
+          <button class="dropdown-item" type="button" onclick="window.location.href='my_orders.html';">Իմ պատվերները</button>
+          <button class="dropdown-item" type="button" onclick="window.location.href='account.html';">Կարգավորումներ</button>
         </div>
       </div>
     </div>
@@ -87,7 +87,7 @@
 </div>
 <div class="row">
   <div class="col-12 mt-3 mb-4">
-    <h1 class="text-danger text-center font-weight-bold">Տեսախցիկ - Hikvision № 05564785</h1>
+    <h1 class="text-dark text-center font-weight-bold m-0 p-3 font-weight-bold alert-secondary d-flex justify-content-center ">Տեսախցիկ - Hikvision № 05564785</h1>
   </div>
 </div>
 
@@ -117,11 +117,12 @@
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">Քանակը</span>
           </div>
-          <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="1">
+          <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="1" min="1">
         </div>
       </div>
       <div class="col-12 col-md-6">
-        <input class="btn btn-primary" type="submit" value="Ավելացնել զամբյուղում">
+        <a href="card.html" class="btn btn-primary m-1">Ավելացնել զամբյուղում</a>
+        <a href="wishlist.html" class="btn border m-1"><img src="image/favorite.png"></a>
       </div>
     </form>
     <div class="row">
@@ -218,8 +219,8 @@
         <div class="col-12 col-md">
           <a href="" class="nav-link  text-light h5">Կապ</a> 
         </div>
-        <div class="col-12 col-md ">
-          <a href="" class="nav-link text-light h5">Գնումներ</a>
+        <div class="col-12 col-md">
+          <a href="store.html" class="nav-link text-light h5">Գնումներ</a>
         </div>
         <div class="col-12 col-md ">
           <a href="" class="nav-link text-light h5">Վճարումների կարգը</a> 
@@ -227,11 +228,11 @@
       </div>
 
       <div class="row text-light bg-dark">
-        <div class="col-12 pt-3 pb-1 text-decoration-none">
+        <div class="col-12 pt-3 pb-1">
 
           <!-- Facebook logo -->
           <a href="https://www.facebook.com/tumocenter/" target="_blank"> 
-            <img  class="mr-2 ml-2 text-decoration-none" src="image/facebook.png" width="40" height="40">
+            <img  class="mr-2 ml-2" src="image/facebook.png" width="40" height="40">
           </a>
 
           <!-- Instagram logo -->
@@ -252,6 +253,7 @@
       </div>
     </div>
   </div>
+
 
   <!-------------------------------------- Modal Մուտք --------------------------------------------------->
 

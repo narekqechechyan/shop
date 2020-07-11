@@ -26,16 +26,15 @@
         </select>
     </div>
     <div class="col-6 col-md-2">
-       <select class="custom-select my-1 " id="inlineFormCustomSelectPref">
-          <option selected>֏</option>
-          <option value="1">$</option>
-          <option value="2">€</option>
-      </select>
-  </div>
-  <div class=" col-md-4 col-lg-2 d-none d-md-block pt-1">
-    <button type="button" class="btn btn-warning font-weight-bold">Նախընտրելի <span class="badge badge-dark text-light">3</span>
-     </button>
- </div>
+     <select class="custom-select my-1 " id="inlineFormCustomSelectPref">
+      <option selected>֏</option>
+      <option value="1">$</option>
+      <option value="2">€</option>
+  </select>
+</div>
+<div class=" col-md-4 col-lg-2 d-none d-md-block pt-1">
+    <a href="wishlist.html" class="btn btn-warning font-weight-bold">Նախընտրելի <span class="badge badge-dark text-light">4</span></a>
+</div>
 </div>
 
 <div class="row">
@@ -59,7 +58,8 @@
   <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
       <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#loginmodal">Մուտք</button>
       <button class="dropdown-item btn btn-primary" type="button" data-toggle="modal" data-target="#registermodal">Գրանցում</button>
-      <button class="dropdown-item" type="button">Կարգավորումներ</button>
+      <button class="dropdown-item" type="button" onclick="window.location.href='my_orders.html';">Իմ պատվերները</button>
+      <button class="dropdown-item" type="button" onclick="window.location.href='account.html';">Կարգավորումներ</button>
   </div>
 </div>
 </div>
@@ -413,42 +413,44 @@
 </div><br>
 
 <!---------------------------------------------- Footer ----------------------------------------------->
-<div class="container-fluid bg-dark">
-  <div class="row text-center b25 text-light text-uppercase">
-    <div class="col-12 col-md">
-      <a href="" class="nav-link  text-light h5">Կապ</a> 
-  </div>
-  <div class="col-12 col-md ">
-      <a href="" class="nav-link text-light h5">Գնումներ</a>
-  </div>
-  <div class="col-12 col-md ">
-      <a href="" class="nav-link text-light h5">Վճարումների կարգը</a> 
-  </div>
+<div class="row">
+  <div class="container-fluid bg-dark">
+    <div class="row text-center b25 text-light text-uppercase">
+      <div class="col-12 col-md">
+        <a href="" class="nav-link  text-light h5">Կապ</a> 
+    </div>
+    <div class="col-12 col-md d-none">
+        <a href="store.html" class="nav-link text-light h5">Գնումներ</a>
+    </div>
+    <div class="col-12 col-md ">
+        <a href="" class="nav-link text-light h5">Վճարումների կարգը</a> 
+    </div>
 </div>
 
 <div class="row text-light bg-dark">
-    <div class="col-12 pt-3 pb-1 text-decoration-none">
+  <div class="col-12 pt-3 pb-1">
 
-      <!-- Facebook logo -->
-      <a href="https://www.facebook.com/tumocenter/" target="_blank"> 
-        <img  class="mr-2 ml-2 text-decoration-none" src="image/facebook.png" width="40" height="40">
-    </a>
+    <!-- Facebook logo -->
+    <a href="https://www.facebook.com/tumocenter/" target="_blank"> 
+      <img  class="mr-2 ml-2" src="image/facebook.png" width="40" height="40">
+  </a>
 
-    <!-- Instagram logo -->
-    <a href="https://www.instagram.com/tumocenter/" target="_blank">
+  <!-- Instagram logo -->
+  <a href="https://www.instagram.com/tumocenter/" target="_blank">
      <img src="image/instagram.png" width="40" height="40">
  </a>
 
  <!-- YouTube logo -->
  <a href="https://www.youtube.com/user/tumotube" target="_blank">
-  <img src="image/youtube.png" width="105" height="40">
+    <img src="image/youtube.png" width="105" height="40">
 </a>
 
 <div class="col-12 text-right pt-1 pb-3">
    &copy; Narek Qechechyan 
 </div> 
 <div class="col-12 text-center">
-    <p>Բոլոր իրավունքները պաշտպանված են</p> 
+  <p>Բոլոր իրավունքները պաշտպանված են</p> 
+</div>
 </div>
 </div>
 </div>
